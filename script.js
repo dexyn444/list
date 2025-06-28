@@ -95,4 +95,15 @@ const sugestoes = [
     const url = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
   }
+  window.onload = () => {
+  document.body.classList.add("carregado");
+
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    if (loader) loader.style.opacity = "0";
+    setTimeout(() => loader?.remove(), 400); // remove após a transição
+  }, 1200);
+};
+
+
             
