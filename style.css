@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .telas {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .sugestoes, .lista {
+    flex: 1;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #eee;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  li:hover {
+    background: #ddd;
+  }
+  
+  .lista ul li {
+    background-color: #c4f0c5;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #c82333;
+  }
+  /* ... (o restante permanece igual) */
+
+.riscado {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+  }
+  .adicionar-manual {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .adicionar-manual input {
+    flex: 2;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+  }
+  
+  .adicionar-manual button {
+    padding: 16px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .adicionar-manual button:hover {
+    background-color: #0056b3;
+  }
+  .adicionar-manual button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+/* Botão de modo escuro */
+#modoToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #modoToggle:hover {
+    background-color: #444;
+  }
+  
+  /* Estilo para o modo escuro */
+  body.escuro {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.escuro .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  body.escuro li {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+  
+  body.escuro .riscado {
+    color: #888;
+  }
+  
+  body.escuro button {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.escuro .adicionar-manual input {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+  }
+/* Transição suave para todos os elementos importantes */
+body,
+.container,
+li,
+button,
+input {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body,
+.container,
+li,
+button,
+input {
+  transition: all 0.3s ease;
+}
+body {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  body.carregado {
+    opacity: 1;
+  }
+  .adicionar-manual {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .adicionar-manual input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .adicionar-manual button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .adicionar-manual button:hover {
+    background-color: #0056b3;
+  }
+  .btn-pequeno {
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    line-height: 1;
+  }
+  
+  /* WhatsApp com cor verde */
+  button.whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.whatsapp:hover {
+    background-color: #1ebe5b;
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1); /* deixa branco no botão verde */
+  }
+  
+  /* botão pequeno com ícone */
+  .btn-pequeno {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #25D366;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-pequeno:hover {
+    background-color: #1ebe5b;
+  }
+         
+    
+  

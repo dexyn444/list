@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ícone para iOS -->
+<link rel="apple-touch-icon" href="icon-192.png" />
+<!-- Cor da barra de status no Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<!-- Ativar tela cheia ao abrir como app -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="manifest" href="manifest.json" />
+<link rel="apple-touch-icon" href="icon-180.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Lista de Compras de Mercado</h1>
+    <div class="telas">
+      
+      <!-- Tela da esquerda: Sugestões -->
+      <div class="sugestoes">
+        <h2>📦 Sugestões</h2>
+        <ul id="produtos"></ul>
+      </div>
+
+      <!-- Tela da direita: Itens selecionados -->
+      <div class="lista">
+        <h2>✅ Minha Lista</h2>
+        <ul id="listaCompras"></ul>
+        <button onclick="limparLista()">Limpar Lista</button>
+    </div>
+   
+</div>
+<div class="adicionar-manual">
+    <input type="text" id="inputManual" placeholder="Digite um produto..." />
+    <button onclick="adicionarProdutoManual()">Adicionar</button>
+  </div>
+</div>
+  </div>
+  <button id="modoToggle" onclick="alternarModo()">🌙 Modo Escuro</button>
+  <button class="btn-pequeno whatsapp" onclick="enviarWhatsApp()" title="Enviar pelo WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="icon">
+  </button>
+  
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
