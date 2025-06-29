@@ -22,25 +22,30 @@
     <h1>🛒 Lista de Compras de Mercado</h1>
     <div class="telas">
       
-      <!-- Tela da esquerda: Sugestões -->
-      <div class="sugestoes">
-        <h2>📦 Sugestões</h2>
-        <ul id="produtos"></ul>
-      </div>
-
-      <!-- Tela da direita: Itens selecionados -->
+     <!-- Tela da direita: Itens selecionados -->
       <div class="lista">
         <h2>✅ Minha Lista</h2>
         <ul id="listaCompras"></ul>
         <button onclick="limparLista()">Limpar Lista</button>
     </div>
-   
-</div>
-<div class="adicionar-manual">
+    <div class="adicionar-manual">
     <input type="text" id="inputManual" placeholder="Digite um produto..." />
     <button onclick="adicionarProdutoManual()">Adicionar</button>
   </div>
 </div>
+
+    <div class="container">
+    <div class="telas">
+      <!-- Tela da esquerda: Sugestões -->
+      <div class="sugestoes">
+        <h2>📦 Sugestões</h2>
+        <ul id="produtos"></ul>
+        <div class="sugestoes">
+  <ul id="produtos"></ul>
+  <button class="minimizar" onclick="alternarSugestoes()">–</button>
+</div>
+</div>
+
   </div>
   <button id="modoToggle" onclick="alternarModo()">🌙 Modo Escuro</button>
   <button class="btn-pequeno whatsapp" onclick="enviarWhatsApp()" title="Enviar pelo WhatsApp">
@@ -51,6 +56,7 @@
     <div></div><div></div><div></div>
   </div>
 </div>
+
 
 
 
