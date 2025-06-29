@@ -104,6 +104,38 @@ const sugestoes = [
     setTimeout(() => loader?.remove(), 400); // remove após a transição
   }, 1200);
 };
+function alternarSugestoes() {
+  const sugestoes = document.querySelector('.sugestoes ul');
+  const botao = document.querySelector('.sugestoes .minimizar');
+  
+  if (sugestoes.style.display === 'none') {
+    sugestoes.style.display = 'block';
+    botao.textContent = '–';
+  } else {
+    sugestoes.style.display = 'none';
+    botao.textContent = '+';
+  }
+}
+function alternarSugestoes() {
+  const sugestoes = document.querySelector('.sugestoes ul');
+  const botao = document.querySelector('.sugestoes .minimizar');
+  
+  if (sugestoes.style.display === 'none') {
+    sugestoes.style.display = 'block';
+    botao.textContent = '–';
+  } else {
+    sugestoes.style.display = 'none';
+    botao.textContent = '+';
+  }
+}
+function alternarSugestoes() {
+  const lista = document.querySelector('.sugestoes ul');
+  const botao = document.querySelector('.sugestoes .minimizar');
+
+  lista.classList.toggle('fechado');
+  botao.textContent = lista.classList.contains('fechado') ? '+' : '–';
+}
+
 
 
             
