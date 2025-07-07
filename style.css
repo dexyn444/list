@@ -275,6 +275,20 @@ body {
   animation: fundoEscuroAnimado 5s ease-in-out infinite alternate;
   transition: opacity 0.4s ease;
 }
+.sugestoes ul.fechado {
+  display: none;
+}
+
+.minimizar {
+  background-color: #444;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 
 
 @keyframes fundoEscuroAnimado {
