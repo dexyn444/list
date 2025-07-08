@@ -240,7 +240,7 @@ body {
   
   /* botão pequeno com ícone */
   .btn-pequeno {
-    padding: 6px;
+    padding: 10px;
     border-radius: 6px;
     background-color: #25D366;
     border: none;
