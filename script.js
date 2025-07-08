@@ -93,7 +93,7 @@ function enviarWhatsApp() {
 
   const mensagem = "🛒 Minha lista de compras:\n\n" +
     listaDeCompras.map((item, i) => {
-      return `${item.riscado ? '✅' : '⛔️'} ${i + 1}. ${item.nome}`;
+      return `${item.riscado ? '✅' : '🛒'} ${i + 1}. ${item.nome}`;
     }).join("\n");
 
   const url = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
