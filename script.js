@@ -78,9 +78,9 @@ function alternarModo() {
   body.classList.toggle("escuro");
 
   if (body.classList.contains("escuro")) {
-    botao.innerHTML = "☀️ Modo Claro";
+    botao.innerHTML = "☀️ ";
   } else {
-    botao.innerHTML = "🌙 Modo Escuro";
+    botao.innerHTML = "🌙 ";
   }
 }
 
@@ -102,11 +102,11 @@ function enviarWhatsApp() {
 
 // Minimizar/mostrar sugestões
 function alternarSugestoes() {
-  const lista = document.querySelector('.sugestoes ul');
   const botao = document.querySelector('.sugestoes .minimizar');
+  const lista = document.querySelector('.sugestoes ul');
 
   lista.classList.toggle('fechado');
-  botao.textContent = lista.classList.contains('fechado') ? '+' : '–';
+  botao.textContent = lista.classList.contains('fechado') ? '-' : '+';
 }
 
 // Carregar lista salva e remover loader
